@@ -59,7 +59,7 @@ def generate_hw01(question):
     )
     chain = final_prompt | llm
     response = chain.invoke({"input": question})
-    print(response.content)
+    return response.content
 
 def generate_hw02(question):
     pass
